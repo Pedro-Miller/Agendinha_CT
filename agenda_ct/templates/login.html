@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login</title>
+      <link rel="stylesheet" href="/static/style.css">
+</head>
+
+</html>
+
+
+<body>
+
+
+
+
+<nav id="navbar">
+   <form class="navform" action="/login"><input class="navinput" type="submit" value="login" required></form>
+   <form class="navform" action="/cadastro"><input class="navinput" type="submit" value="Cadastre-se" required></form>
+</nav>
+<div id="login">
+
+<h1>Faça seu login</h1>
+
+<form class="questionario" action="/login" method="post">
+
+{% with messages = get_flashed_messages() %}  
+      {% if messages %}  
+            {% for message in messages %}  
+                  <p class="error">{{ message }}</p>
+            {% endfor %}  
+      {% endif %}  
+{% endwith %}
+
+<input class="questionario" type="text" name = "dre" placeholder="DRE" required>
+<input class="questionario" type="password" name = "senha" placeholder="Senha" required>
+<input class="questionario" type="submit">
+
+</form>
+
+</div>
+
+</body>
+
+
+

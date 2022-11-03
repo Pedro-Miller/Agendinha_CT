@@ -1,0 +1,294 @@
+input{
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+#sidebar{
+    z-index: 1;
+    background-color: #5a649c;
+    left: 0%;
+    top: 12.3%;
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 35%;
+    justify-content: center;
+}
+
+#bot{
+    display: flex;
+    position: absolute;
+    left: 110%;
+}
+
+#select{
+    display: flex;
+    position: absolute;
+    left: 70%;
+}
+
+ul{
+
+    background: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    margin: 3px;
+    
+    display: inline-block;
+    
+    background: none;
+}
+
+h1{
+    color: #5a649c;
+    margin: 40px;
+    font-family: "Verdana";
+    text-align: center;
+    font-variant: initial;
+    font-weight: bold;
+
+}
+
+:root{
+    --ciano : #2DCDEA;
+    --amarelo: #ffff00;
+    --magenta: #E01D89;
+}
+
+.error{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.questionario{
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    display: block;
+    align-items: center;
+}
+
+
+#login{
+    padding: 20px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+nav#navbar{
+
+    padding: 15px;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    width: 100%;
+    left: -8px;
+    top: 0%;
+}
+
+
+
+.navform{
+    text-decoration: none;
+    height: max-content;
+    width: auto;
+    align-items: center;
+    margin: 5px;
+    font-family: "Arial", sans-serif;
+    font-size:40px;
+    display: flex;
+    background-color: #5a649c;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+}
+
+.navinput{
+    text-decoration: none;
+    height: max-content;
+    width: auto;
+    align-items: center;
+    margin: 0px;
+    font-family: "Arial", sans-serif;
+    font-size:40px;
+    display: flex;
+    background-color: #5a649c;
+    border-radius: 20px;
+    border-color: #5a649c;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+}
+
+body{
+    padding: 0px;
+    position: relative;
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+*{
+    background-color: whitesmoke(222, 254, 255);
+    font-family: "Verdana", "Arial";
+    color: whitesmoke;
+}
+
+
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#submiss{
+    background-color: black;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    left: 40%;
+    top: 60%;
+    position: absolute;
+    height: 40px;
+    width: 90px;
+}
+
+#telinha{ 
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    left: 50%;
+    
+    position: absolute;
+    height: 500px;
+    width: 500px;
+}
+
+.questionario2{
+    padding: 5px;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    color: blueviolet;
+    text-align: center;
+    font-size: 16px;
+    align-items:center;
+    left: 18%;
+}
+
+#title{
+    border-radius: 20px;
+    padding: 10px;
+    color: #5a649c;
+    background-color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: absolute;
+    left: 18%;
+    top: 6%;
+    display: flex;
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: normal;
+}
+
+#evento{
+    top: 30%;  
+}
+
+#descric{
+    top: 40%;
+}
+
+#dia{
+    top: 50%;
+}
+
+#mes{
+    top: 60%;
+}
+
+.botaoigual{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    margin: 5px;
+    align-items:center;
+    background-color: #5a649c;
+    font-size: 16px; 
+    line-height: 10px; padding: 15px; 
+    border-radius: 10px;
+    font-family: "Verdana", "Arial";}
+    .botaoigual:hover {
+        background-color: #5a649c; 
+        transition: 0.6s;
+    }
+
+.botao{
+    line-height: 16px; 
+    padding: 10px 30px; 
+    border-radius: 10px;
+    font-family: "Verdana", "Arial";}
+
+    .botao:hover {
+        background-color: #5a649c; 
+        transition: 0.6s;
+    }
+
+
+
+
+
+.caixinha{
+  padding: 3.5px 15px;
+  display: inline-block;
+  font-size: 16px;
+}

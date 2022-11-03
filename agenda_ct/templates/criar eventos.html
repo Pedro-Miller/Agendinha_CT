@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/reset.css"/>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <form class="navform" action="/login"><input class="navinput" type="submit" value="login" required></form>
+        <form class="navform" action="/cadastro"><input class="navinput" type="submit" value="Cadastre-se" required></form>
+     </nav>
+    <div id="central">
+
+    <div id="telinha">
+        <p id="title">Crie seu evento</p>
+        <form action="/criar" method="post">
+        <input class="questionario2" id="evento" type="text" placeholder="evento" name="evento" required>
+        <input class="questionario2" id= "descric" type="text" placeholder="descrição" name="descrição" required>
+        <input class="questionario2" id= "dia" type="text" placeholder="dia" name="dia" required>
+        <input class="questionario2" id= "mes" type="text" placeholder="mes" name="mes" required> 
+        <input class="botaoigual" type="submit" placeholder="Enviar">
+        </form>
+    </div>
+    
+
+    <div id="sidebar">
+        <form action="/criar" method="post">
+        <input id="select" type="text" name="data">
+        <input class="botaoigual" type="submit">
+        </form>
+        <ul>
+            <li>BBBBBBBBB</li>
+            <li>AUJHH</li>
+        </ul>
+        </div>
+       
+    </div>
+</div>
+        
+</body>

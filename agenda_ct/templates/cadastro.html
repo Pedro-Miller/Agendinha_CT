@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+   
+    <body>
+    
+    
+    
+     <nav id="navbar">
+        <form class="navform" action="/login"><input class="navinput" type="submit" value="login"></form>
+        <form class="navform" action="/cadastro"><input class="navinput" type="submit" value="Cadastre-se"></form>
+     </nav>
+
+    <h1 font-family="Arial">Faça seu cadastro</h1>
+    
+    <form action="/cadastro" method="post">
+    {% with messages = get_flashed_messages() %}  
+        {% if messages %}  
+              {% for message in messages %}  
+                   <p class="error">{{ message }}</p>
+                   
+              {% endfor %}  
+        {% endif %}  
+     {% endwith %}
+    <input class="questionario" type="text" name = "nome" placeholder="Nome"  required>
+    <label for="nome">Nome</label>
+    <input class="questionario" type="text" name = "dre" placeholder="DRE" required>
+    <input class="questionario" type="password" name = "senha" placeholder="senha" required>
+    <p><input class="botao" type="submit"></p>
+    
+    </form>
+    </body>
+    
+    </html>
